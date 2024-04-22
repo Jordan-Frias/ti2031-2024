@@ -1,0 +1,56 @@
+h1 {
+    color: brown;
+}
+
+.contenedor-cartas {
+    font-size: 0; /* Eliminar el espacio entre elementos en línea */
+    text-align: center; /* Centrar las cartas */
+}
+
+body {
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    font-family: Arial, sans-serif; /* Tipo de fuente predeterminado */
+    margin: 20px; /* Añadir márgenes exteriores a la página */
+    padding: 0; /* Eliminar relleno predeterminado */
+}
+
+
+h2 {
+    color: #333; /* Color de texto para títulos */
+}
+
+.carta {
+    background-color: #fff; /* Color de fondo de las cartas */
+    width: 300px; /* Ancho de cada carta */
+    min-height: 300px; /* Altura mínima de cada carta */
+    display: inline-block; /* Mostrar las cartas en línea horizontal */
+    margin: 10px; /* Margen entre las cartas */
+    border: 2px solid #ddd; /* Borde de la carta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la carta */
+    vertical-align: top; /* Alinear las cartas por la parte superior */
+    text-align: center; /* Centrar el contenido de la carta */
+}
+
+.carta img {
+    width: 100%; /* Ajustar la imagen al ancho de la carta */
+    max-height: 200px; /* Establecer el tamaño máximo de la imagen */
+    object-fit: cover; /* Mantener la relación de aspecto de la imagen */
+    border-top-left-radius: 10px; /* Bordes redondeados para la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Bordes redondeados para la esquina superior derecha */
+}
+
+.carta h3 {
+    margin-top: 10px; /* Espacio superior del título */
+    margin-bottom: 0; /* Eliminar el margen inferior del título */
+}
+
+.carta p {
+    margin-top: 0; /* Eliminar el margen superior del párrafo */
+    margin-bottom: 10px; /* Espacio inferior del párrafo */
+}
+
+.titulo-imagen {
+    width: 100%; /* La imagen ocupará todo el ancho de la pantalla */
+    height: 200px; /* La altura se ajustará automáticamente para mantener la proporción */
+}
