@@ -8,15 +8,18 @@ h1 {
 }
 
 body {
-    background-color: #f5f5f5; /* Color de fondo gris claro */
+    /*background-color: #f5f5f5; /* Color de fondo gris claro */
     font-family: Arial, sans-serif; /* Tipo de fuente predeterminado */
     margin: 20px; /* Añadir márgenes exteriores a la página */
     padding: 0; /* Eliminar relleno predeterminado */
+    font-family: "Inconsolata", monospace;
+    background-color: #222; 
+    color: white; 
 }
 
 
 h2 {
-    color: #333; /* Color de texto para títulos */
+    color: white; /* Color de texto para títulos */
 }
 
 .carta {
@@ -30,6 +33,7 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la carta */
     vertical-align: top; /* Alinear las cartas por la parte superior */
     text-align: center; /* Centrar el contenido de la carta */
+    color: black;
 }
 
 .carta img {
@@ -53,4 +57,37 @@ h2 {
 .titulo-imagen {
     width: 100%; /* La imagen ocupará todo el ancho de la pantalla */
     height: 200px; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.pixel {
+    position: absolute;
+    width: 5px; /* Ajustamos el tamaño de los pixeles para que sean más visibles */
+    height: 5px;
+    /* Aplicamos colores aleatorios */
+    background-color: rgb(
+        /* Generamos un valor aleatorio entre 0 y 255 para el rojo */
+        calc(255 * random()),
+        /* Generamos un valor aleatorio entre 0 y 255 para el verde */
+        calc(255 * random()),
+        /* Generamos un valor aleatorio entre 0 y 255 para el azul */
+        calc(255 * random())
+    );
+    animation: emergiendo 2s linear infinite; /* Duración, tipo de animación y repetición */
+}
+
+@keyframes emergiendo {
+    0% {
+        /* Inicio de la animación: posición aleatoria en los cuatro lados de la ventana */
+        left: calc(100vw * random()); /* Generamos una posición aleatoria en el eje X */
+        top: calc(100vh * random()); /* Generamos una posición aleatoria en el eje Y */
+        opacity: 0; /* La opacidad inicial es 0 */
+        transform: scale(0); /* Inicialmente los pixeles tienen un tamaño de 0 */
+    }
+    100% {
+        /* Final de la animación: posición y tamaño final */
+        left: calc(100vw * random()); /* Generamos una posición aleatoria en el eje X */
+        top: calc(100vh * random()); /* Generamos una posición aleatoria en el eje Y */
+        opacity: 1; /* La opacidad final es 1 */
+        transform: scale(1); /* Los pixeles tienen el tamaño original */
+    }
 }
