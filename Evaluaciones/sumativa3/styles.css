@@ -1,0 +1,166 @@
+body {
+    background-image: url('imagenes/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body.inconsolata-body {
+    font-family: "Inconsolata", monospace;
+    color: #000000;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    list-style-type: none;
+    font-size: 18px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+header h1, footer p {
+    background-color: crimson;
+    color: #000000;
+    padding: 10px 0;
+    margin: 0 auto;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    animation: blink 2s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    background-color: crimson;
+    color: #000000;
+    padding: 10px 0;
+    margin: 0 auto;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game {
+    flex: 1 0 200px;
+    text-align: center;
+}
+
+.game img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    animation: blink 2s infinite alternate;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#nicknameForm {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#bienvenida {
+    margin-bottom: 20px;
+}
+
+#cart {
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+}
+
+.cart-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+.cart-item button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #ff0000;
+}

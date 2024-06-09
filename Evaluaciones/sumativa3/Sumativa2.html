@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INACAPLudi - Club de Juegos de Mesa y Rol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="iconoinacap.ico" type="ico">
+</head>
+<body class="inconsolata-body">
+
+<header>
+    <div class="container">
+        <h1 class="jersey-25-regular">¡Bienvenidos a INACAPLudi!</h1>
+    </div>
+</header>
+
+<section id="identificacion">
+    <div class="container">
+        <form id="nicknameForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="bienvenida" style="display: none;">Bienvenido, <span id="nicknameDisplay"></span>! <button id="logout">Desconectar</button></p>
+    </div>
+</section>
+
+<section id="catalogo">
+    <div class="container">
+        <h2>Catálogo de Productos</h2>
+        <div class="game-list" id="gameList"></div>
+    </div>
+</section>
+
+<section id="Carrito">
+    <div class="container">
+        <h2>Carro de Compras</h2>
+        <div id="cart"></div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
